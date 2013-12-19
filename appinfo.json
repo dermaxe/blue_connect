@@ -1,0 +1,18 @@
+{
+    "versionLabel": "1.0",
+    "uuid": "1384f6f0-e55b-4033-a91e-ed590dc7009b",
+    "appKeys": {},
+    "longName": "blue_connect",
+    "versionCode": 1,
+    "capabilities": [
+        ""
+    ],
+    "shortName": "blue_connect",
+    "companyName": "der_maxe",
+    "watchapp": {
+        "watchface": false
+    },
+    "resources": {
+        "media": []
+    }
+}
