@@ -8,6 +8,8 @@ static TextLayer *batterystatus_layer;
 
 uint8_t pebble_batteryPercent;
 
+static GBitmap *icon_bt_on;
+
 static struct CommonWordsData {
   TextLayer *label;
   Window *window;
@@ -115,11 +117,15 @@ static void do_init(void) {
   pebble_batteryPercent = pb_bat.charge_percent;  
   battery_state_service_subscribe(pebble_battery_callback);
   update_pebble_battery(battery_state_service_peek());
+	
+  icon_bt_on  = gbitmap_create_with_resource( RESOURCE_ID_IMAGE_BT_ON_ICON );
 }
 
 static void do_deinit(void) {
+  battery_state_service_unsubscribe();
+  bluetooth_connection_service_unsubscribe();
+  tick_timer_service_unsubscribe();
   window_destroy(s_data.window);
-  text_layer_destroy(s_data.label);
 }
 
 int main(void) {

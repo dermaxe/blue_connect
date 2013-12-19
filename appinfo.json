@@ -15,6 +15,11 @@
     "resources": {
         "media": [
             {
+                "type": "png",
+                "name": "RESOURCE_ID_IMAGE_BT_ON_ICON",
+                "file": "images/Computer-Bluetooth-2-icon.png"
+            },
+            {
                 "menuIcon": true,
                 "type": "png",
                 "name": "FUZZY_LOGO",
