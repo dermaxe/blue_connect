@@ -16,7 +16,7 @@
         "media": [
             {
                 "type": "png",
-                "name": "RESOURCE_ID_IMAGE_BT_ON_ICON",
+                "name": "IMAGE_BT_ON_ICON",
                 "file": "images/Computer-Bluetooth-2-icon.png"
             },
             {
