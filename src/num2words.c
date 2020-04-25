@@ -1,4 +1,4 @@
-
+//kommentar test
 #include "num2words.h"
 #include "string.h"
 
